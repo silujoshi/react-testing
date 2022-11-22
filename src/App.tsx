@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Button from "./components/Button/Button";
+import { DropdownList } from "./components/DropdownList/DropdownList";
+
+const labels = {
+  hide: "Hide",
+  show: "Show",
+};
+
+const data = [
+  { value: "1", label: "Item 1" },
+  { value: "2", label: "Item 2" },
+  { value: "3", label: "Item 3" },
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Button label="Click me!" onClick={() => {}} />
+      <DropdownList data={data} labels={labels} onRemoveItem={() => {}} />
     </div>
   );
 }
