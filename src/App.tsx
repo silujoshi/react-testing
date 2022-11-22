@@ -15,7 +15,7 @@ const data = [
 
 function App() {
   return (
-    <div className="App">
+    <div className="App-header">
       <Button label="Click me!" onClick={() => {}} />
       <DropdownList data={data} labels={labels} onRemoveItem={() => {}} />
     </div>
